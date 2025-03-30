@@ -1,8 +1,8 @@
 #include <stdio.h>
     struct Carta{
         int populacao;
-        float area, densidadepopulacional;
-        float pib, pibpercapita;
+        float area;
+        float pib;
         int pontos_turisticos;
 
     };
@@ -48,7 +48,8 @@
                 printf("Area: %.2f km²\n", carta1.area);
                 printf("PIB: R$ %.2f\n", carta1.pib);
                 printf("Pontos turisticos: %d\n", carta1.pontos_turisticos);
-                printf()
+                printf("Densidade Populacional: %.2f\n", carta1.populacao / carta1.area);
+                printf("PIB per Capita: %.2f\n", carta1.pib / carta1.populacao);
             
                 // EXIBIÇÃO DOS DADOS 2 //
             
@@ -57,6 +58,10 @@
                 printf("Area: %.2f km²\n", carta2.area);
                 printf("PIB: R$ %.2f\n", carta2.pib);
                 printf("Pontos turisticos: %d\n", carta2.pontos_turisticos);
+                printf("Densidade Populacional: %.2f\n", carta2.populacao / carta2.area);
+                printf("PIB per Capita: %.2f\n", carta2.pib / carta2.populacao);
+            
+                
             
                 return 0;
             
